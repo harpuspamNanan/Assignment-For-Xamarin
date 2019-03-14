@@ -95,10 +95,13 @@
 				android:minHeight="30px"
 				xmlns:p4="http://xamarin.com/mono/android/designer"
 				android:id="@+id/totalTV" />
-			<EditText
-				android:inputType="numberDecimal"
-				android:layout_column="1"
-				android:id="@+id/totalET" />
+			<TextView
+				p5:placeholder="true"
+				android:text=""
+				android:minWidth="30px"
+				android:minHeight="30px"
+				xmlns:p4="http://xamarin.com/mono/android/designer"
+				android:id="@+id/totalInputTV" />
 		</TableRow>
 		<TableRow
 			android:id="@+id/tableRow5">
@@ -109,10 +112,13 @@
 				android:minHeight="30px"
 				xmlns:p4="http://xamarin.com/mono/android/designer"
 				android:id="@+id/finalTV" />
-			<EditText
-				android:inputType="numberDecimal"
-				android:layout_column="1"
-				android:id="@+id/finalET" />
+			<TextView
+				p4:placeholder="true"
+				android:text=""
+				android:minWidth="30px"
+				android:minHeight="30px"
+				xmlns:p4="http://xamarin.com/mono/android/designer"
+				android:id="@+id/finalInputTV" />
 		</TableRow>
 	</TableLayout>
 
