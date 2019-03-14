@@ -73,17 +73,17 @@
 					android:layout_height="wrap_content"
 					android:checked="true"
 					android:text="5 %"
-					android:id="@+id/radioButton1" />
+					android:id="@+id/fivePerRdBtn" />
 				<RadioButton
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="10 %"
-					android:id="@+id/radioButton2" />
+					android:id="@+id/tenPerRdBtn" />
 				<RadioButton
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="15 %"
-					android:id="@+id/radioButton3" />
+					android:id="@+id/fifteenPerRdBtn" />
 			</RadioGroup>
 		</TableRow>
 		<TableRow
@@ -96,8 +96,8 @@
 				xmlns:p4="http://xamarin.com/mono/android/designer"
 				android:id="@+id/totalTV" />
 			<TextView
-				p5:placeholder="true"
-				android:text=""
+				p4:placeholder="true"
+				android:text=" "
 				android:minWidth="30px"
 				android:minHeight="30px"
 				xmlns:p4="http://xamarin.com/mono/android/designer"

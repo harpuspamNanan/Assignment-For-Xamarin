@@ -12,14 +12,26 @@ namespace AssignmentForXamarin
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        TextView TvPrice, TvQuantity
+        TextView TvPrice, TvQuantity, TvTotal, TvFinal;
+        SeekBar SbPrice, SbQuantity;
+        RadioButton rbBtn5, rdBtn10, rdBtn15;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            
+            TvPrice = (TextView)FindViewById(Resource.Id.priceInputTV);
+            TvQuantity = (TextView)FindViewById(Resource.Id.quantityInputTV);
+            TvTotal = (TextView)FindViewById(Resource.Id.totalInputTV);
+            TvFinal = (TextView)FindViewById(Resource.Id.finalInputTV);
+            SbPrice = (SeekBar)FindViewById(Resource.Id.priceSeekBar);
+            SbQuantity = (SeekBar)FindViewById(Resource.Id.quantitySeekBar);
+            rbBtn5 = (RadioButton)FindViewById(Resource.Id.fivePerRdBtn);
+            rdBtn10 = (RadioButton)FindViewById(Resource.Id.tenPerRdBtn);
+            rdBtn15 = (RadioButton)FindViewById(Resource.Id.fifteenPerRdBtn);
+
+
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

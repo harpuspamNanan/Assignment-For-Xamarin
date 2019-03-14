@@ -2531,6 +2531,9 @@ namespace AssignmentForXamarin
 			// aapt resource value: 0x7f080072
 			public const int expanded_menu = 2131230834;
 			
+			// aapt resource value: 0x7f080098
+			public const int fifteenPerRdBtn = 2131230872;
+			
 			// aapt resource value: 0x7f080050
 			public const int fill = 2131230800;
 			
@@ -2541,10 +2544,13 @@ namespace AssignmentForXamarin
 			public const int fill_vertical = 2131230792;
 			
 			// aapt resource value: 0x7f08009e
-			public const int finalET = 2131230878;
+			public const int finalInputTV = 2131230878;
 			
 			// aapt resource value: 0x7f08009d
 			public const int finalTV = 2131230877;
+			
+			// aapt resource value: 0x7f080096
+			public const int fivePerRdBtn = 2131230870;
 			
 			// aapt resource value: 0x7f080054
 			public const int @fixed = 2131230804;
@@ -2674,15 +2680,6 @@ namespace AssignmentForXamarin
 			
 			// aapt resource value: 0x7f080075
 			public const int radio = 2131230837;
-			
-			// aapt resource value: 0x7f080096
-			public const int radioButton1 = 2131230870;
-			
-			// aapt resource value: 0x7f080097
-			public const int radioButton2 = 2131230871;
-			
-			// aapt resource value: 0x7f080098
-			public const int radioButton3 = 2131230872;
 			
 			// aapt resource value: 0x7f080095
 			public const int radioGroup1 = 2131230869;
@@ -2831,6 +2828,9 @@ namespace AssignmentForXamarin
 			// aapt resource value: 0x7f080019
 			public const int tag_transition_group = 2131230745;
 			
+			// aapt resource value: 0x7f080097
+			public const int tenPerRdBtn = 2131230871;
+			
 			// aapt resource value: 0x7f08001a
 			public const int text = 2131230746;
 			
@@ -2871,7 +2871,7 @@ namespace AssignmentForXamarin
 			public const int topPanel = 2131230830;
 			
 			// aapt resource value: 0x7f08009b
-			public const int totalET = 2131230875;
+			public const int totalInputTV = 2131230875;
 			
 			// aapt resource value: 0x7f08009a
 			public const int totalTV = 2131230874;
