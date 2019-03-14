@@ -19,12 +19,11 @@
 				android:minHeight="30px"
 				xmlns:p4="http://xamarin.com/mono/android/designer"
 				android:id="@+id/quantityTV" />
-			
 			<SeekBar
 				android:layout_column="1"
 				android:max="200"
-				android:layout_width="100px"
-				android:id="@+id/priceSeekBar" />
+				android:id="@+id/priceSeekBar"
+				android:minWidth="30dp" />
 			<TextView
 				p4:placeholder="true"
 				android:text=""
@@ -44,7 +43,7 @@
 				android:id="@+id/quantityTV" />
 			<SeekBar
 				android:layout_column="1"
-				android:id="@+id/quantitySeekBar" />
+				android:id="@+id/quantitySeekBar"/>
 			<TextView
 				p4:placeholder="true"
 				android:text=""
@@ -67,24 +66,27 @@
 				android:minHeight="25px"
 				android:layout_column="0"
 				android:layout_width="150px"
-				android:orientation="horizontal"
+				
 				android:id="@+id/radioGroup1">
 				<RadioButton
-					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:checked="true"
 					android:text="5%"
-					android:id="@+id/fivePerRdBtn" />
+					android:id="@+id/fivePerRdBtn"
+					android:maxWidth="200dp"
+					android:minWidth="200dp" />
 				<RadioButton
-					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="10%"
-					android:id="@+id/tenPerRdBtn" />
+					android:id="@+id/tenPerRdBtn"
+					android:maxWidth="200dp"
+					android:minWidth="200dp" />
 				<RadioButton
-					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="15%"
-					android:id="@+id/fifteenPerRdBtn" />
+					android:id="@+id/fifteenPerRdBtn"
+					android:maxWidth="200dp"
+					android:minWidth="200dp" />
 			</RadioGroup>
 		</TableRow>
 		<TableRow
