@@ -16,6 +16,8 @@ namespace AssignmentForXamarin
         SeekBar SbPrice, SbQuantity;
         RadioButton rbBtn5, rdBtn10, rdBtn15;
 
+        double total, finalPrice;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -31,6 +33,31 @@ namespace AssignmentForXamarin
             rdBtn10 = (RadioButton)FindViewById(Resource.Id.tenPerRdBtn);
             rdBtn15 = (RadioButton)FindViewById(Resource.Id.fifteenPerRdBtn);
 
+            SbPrice.ProgressChanged += delegate {
+                TvPrice.Text = SbPrice.Progress.ToString();
+            };
+
+            SbQuantity.ProgressChanged += delegate {
+                TvQuantity.Text = SbQuantity.Progress.ToString();
+            };
+
+
+            TvTotal.Click += delegate
+            {
+                if (rbBtn5.Checked)
+                    total = (SbPrice.Progress * SbQuantity.Progress) - ((SbPrice.Progress * SbQuantity.Progress) * 0.05);                    
+
+                else if (rdBtn10.Checked)
+                    total = (SbPrice.Progress * SbQuantity.Progress) - ((SbPrice.Progress * SbQuantity.Progress) * 0.10);                
+
+                else if (rdBtn15.Checked)
+                    total = (SbPrice.Progress * SbQuantity.Progress) - ((SbPrice.Progress * SbQuantity.Progress) * 0.15);
+
+
+                TvTotal.Text = total.ToString();
+                finalPrice = total + (0.13 * total);
+                TvFinal.Text = TvFinal.ToString();
+            };
 
         }
 
